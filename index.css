@@ -1,0 +1,362 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*prevent horizontal overflow on mobile design*/
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Plus jakarta sans', Sans;
+}
+
+/*common css rules*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/*end of css rules*/
+/*set the variables*/
+:root {
+    --btn-header-bg: #13183F;
+    --btn-hero-bg: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%) --btn-footer-bg: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --btn-bg: #13183F;
+    --bg-color--courses: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    --btn-footer-bg: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+/*mobile first*/
+.container {
+    margin: 0 auto;
+    width: 91%;
+}
+
+.btn {
+    height: 48px;
+    width: 140px;
+    font-size: normal;
+    font-style: 16px;
+    line-height: 28px;
+    border-radius: 16px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 89%;
+}
+
+/*header*/
+.btn-header {
+    background: var(--btn-header-bg);
+}
+
+.btn-header:hover {
+    background: #666CA3;
+}
+
+.header nav {
+    height: 48px;
+    margin-top: 16px;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    height: 100px;
+}
+
+/*end of header*/
+/*hero*/
+.hero-text {
+    max-width: 400px;
+}
+
+.hero-text h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+}
+
+.hero-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.hero-text h1,
+p {
+    margin-bottom: 24px;
+}
+
+.btn-hero {
+    background: var(--btn-hero-bg);
+    margin-bottom: 45px;
+}
+
+.btn-hero:hover {
+    background: linear-gradient(0deg rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.hero-img {
+    background-image: url(./Images/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+    margin-bottom: 62px;
+}
+
+/*end of hero*/
+/*courses*/
+.cat {
+    background: var(--bg-color--courses);
+    padding-bottom: 80px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.course-feature {
+    width: 343px;
+    height: 112px;
+    border-radius: 10px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.course-feature p {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+
+}
+
+.course {
+    width: 343px;
+    height: 259px;
+    border-radius: 10px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    position: relative;
+    margin-top: 32px;
+}
+
+.course * {
+    margin-top: 30px;
+}
+
+.course h1 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+}
+
+.course p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.course a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+}
+
+.course a:hover {
+    color: #FFA7C3;
+}
+
+.course img {
+    position: absolute;
+    top: -50px;
+}
+
+/*end ofcourses*/
+/*footer*/
+.footer {
+    background: var(--btn-bg);
+    height: 120px;
+}
+
+.footer nav {
+    padding-top: 36px;
+}
+
+.btn-footer {
+    background: var(--btn-footer-bg);
+}
+
+.btn-footer:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)
+}
+
+/*end of footer*/
+/*courses*/
+.course-feature {
+    width: 48%;
+    height: 259px;
+    margin-top: 57px;
+    ;
+    padding: 56px 32px;
+}
+
+.course {
+    width: 48%;
+    height: 283px;
+}
+
+/*end of courses*/
+/*end of tablet media queries*/
+/*desktop media queries*/
+@media (min-width: 768px) {
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.hero {
+    position: relative;
+}
+.hero-text {
+    padding-top: 100px;
+    padding-bottom: 210px;
+}
+.hero-img {
+    z-index: -1;
+    background-image: url(./Images/image-hero-tablet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    top: -190px;
+    right: -290px;
+    padding-top: 0px;
+}
+.course-feature {
+    width: 48%;
+    height: 259px;
+    padding: 56px 32px;
+    margin-top: 57px;
+}
+.course {
+    width: 48%;
+    height: 283px;
+
+}
+
+
+}
+@media (min-width: 1208px) {
+    .container {
+        width: 78%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 114px;
+    }
+
+    /*hero*/
+    .hero-text {
+        max-width: 460px;
+    }
+
+    .hero-img {
+        background-image: url(./Images/image-hero-desktop.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 937px;
+        width: 991px;
+        padding-top: 0px;
+        top: -320px;
+        right: -510px;
+    }
+
+    /*end of hero*/
+    /*courses*/
+    .courses {
+        gap: 20px;
+    }
+
+    .course-feature {
+        width: 31%;
+    }
+
+    .course {
+        height: 280px;
+        width: 31%;
+    }
+
+    /*end of courses*/
+}
+
+@media (min-width:1440px) {
+    .btn {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .hero-text h1 {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 70.5px;
+        color: #13183F;
+    }
+
+    .courses {
+        gap: 30px;
+    }
+
+    .course-feature p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .course h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
